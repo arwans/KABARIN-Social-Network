@@ -1,0 +1,13 @@
+<IfModule mod_rewrite.c>
+RewriteEngine on
+RewriteBase /kabarin
+
+RewriteRule ^login$ index.php [L]
+RewriteRule ^$ lembar.php [L]
+RewriteRule ^([0-9]+)$ index.php?ref=gagal [L]
+RewriteRule ^beranda$ lembar.php [L]
+RewriteRule ^profil$ lembar_profil.php [L]
+RewriteRule ^sebutan$ lembar_mention.php [L]
+
+#Options All -Indexes
+</IfModule>
